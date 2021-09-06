@@ -5,9 +5,10 @@ const Text = ({
   bold,
   children,
   color,
+  fontSize,
 }) => {
   return (
-    <Styled.Text color={color} bold={bold}>
+    <Styled.Text bold={bold} color={color} fontSize={fontSize}>
       {children}
     </Styled.Text>
   )

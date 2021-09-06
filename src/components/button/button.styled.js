@@ -2,19 +2,22 @@ import styled from "styled-components";
 
 const Styled = {
   Button: styled.button`
-    background-color: ${(props) => props.color ? props.color : 'unset'};
+    align-items: center;
+    background-color: ${(props) => props.backgroundColor ? props.backgroundColor : 'unset'};
     border: none;
     border-radius: 3px;
+    display: flex;
+    max-height: 40px;
+    padding: 11px 24px 11px 24px;
   `,
 
   Label: styled.section`
-    align-items: center;
     display: flex;
-    padding: 11px 36px 11px 36px;
+    white-space: nowrap;
   `,
 
   ImageContainer: styled.section`
-    margin-left: 8px;
+    margin: 17px 0px 14px 8px;
   `,
 };
 

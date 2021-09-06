@@ -5,62 +5,41 @@ import Text from '../text/text.component';
 import Button from '../button/button.component';
 import Styled from './features.styled';
 
-import { Link, useStaticQuery, graphql } from "gatsby";
+import { Colors } from "../../../helpers/ui";
 
-const Features = () => {
+const Features = ({ featuredItems }) => {
   
-  const data = useStaticQuery(
-      graphql`
-        {
-        	allContentfulLandingPageData{
-        		edges {
-        			node {
-        				featuredItems {
-        					title
-                  slug
-                  description {
-        						description
-                  } 
-                  image {
-        						file {
-        						  url
-        						  fileName
-        						  contentType
-        						}
-                  }
-                }
-              }
-            }
-        	}
-        }
-      `
-    )
-    const featuredItems = data.allContentfulLandingPageData.edges[0].node.featuredItems;
-    const getFeaturedItems = () => (
-      featuredItems.map(item => {
-        console.log(item)
-        return (
-          <Card key={item.title} >
-            <Card.Header>
+  
+  const getFeaturedItems = () => (
+    featuredItems.map(item => {
+      return (
+        <Styled.Card color={Colors.white} key={item.title} >
+          <Styled.CardHeader>
+            <Styled.ImageContainer id={item.slug}>
               <img src={item.image.file.url} />
-            </Card.Header>
-            <Card.Body>
-              <Heading color='#333' level={2}>
-               {item.title}
-              </Heading>
-              <Text color='#333'>
-                {item.description.description}
-              </Text>
-            </Card.Body>
-            <Card.Footer>
-              <Button color='#333' image="chevronRight" label="Request a demo" />
-            </Card.Footer>
-          </Card>
-        )
-      })
-    )
+            </Styled.ImageContainer>
+          </Styled.CardHeader>
+          <Styled.CardBody>
+            <Heading color={Colors.black} level={5}>
+              {item.title}
+            </Heading>
+            <Text color={Colors.black}>
+              {item.description.description}
+            </Text>
+          </Styled.CardBody>
+          <Styled.CardFooter>
+            <Button 
+              color={Colors.orange}
+              image="chevronRight" 
+              label="Learn More" 
+            />
+          </Styled.CardFooter>
+        </Styled.Card>
+      )
+    })
+  )
     
-    const allItems = getFeaturedItems();
+  const allItems = getFeaturedItems();
 
 
 

@@ -5,21 +5,20 @@ import Styled from "./button.styled";
 import { FiChevronRight } from "react-icons/fi";
 
 
-const Button = ({ color, image, label }) => {
+const Button = ({ backgroundColor, color, image, label }) => {
   const validImages = {
-    chevronRight: <FiChevronRight color={Colors.white} size={18} />,
+    chevronRight: <FiChevronRight color={color || Colors.white} size={18} />,
   }
-
   return (
-    <Styled.Button color={color}>
+    <Styled.Button backgroundColor={backgroundColor}>
       <Styled.Label>
-        <Text bold color={Colors.white}>{label}</Text>
-        {image &&
-          <Styled.ImageContainer>
-            {validImages[image]}
-          </Styled.ImageContainer>
-        }
+        <Text bold color={color} fontSize={14.4}>{label}</Text>
       </Styled.Label>
+      {image &&
+        <Styled.ImageContainer>
+          {validImages[image]}
+        </Styled.ImageContainer>
+      }
     </Styled.Button>
   );
 };

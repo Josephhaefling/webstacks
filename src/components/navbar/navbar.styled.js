@@ -3,18 +3,24 @@ import styled from "styled-components";
 const Styled = {
   NavBar: styled.section`
     display: flex;
-    height: 100%;
-    justify-content: center;
+    min-height: 115px; 
     width: 100%;
   `,
 
   LogoContainer: styled.section`
-    /* padding-left: 255px; */
-    width: 100%;
+    align-items: center;
+    display: flex;
+    width: 40%;
+
+    img {
+      height: 24px;
+    }
   `,
 
   NavigationContainer: styled.section`
-    /* padding-right: 255px; */
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
     width: 100%;
   `,
 };

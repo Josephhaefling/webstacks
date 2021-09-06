@@ -13,9 +13,9 @@ const Footer = ({ children, ...rest}) => (
   <Styled.Footer {...rest}>{children}</Styled.Footer>
 );
 
-const Card = ({ children }) => {
+const Card = ({ color, children, ...rest }) => {
   return (
-    <Styled.Card>
+    <Styled.Card color={color} {...rest}>
       {children}
     </Styled.Card>
   );

@@ -1,4 +1,4 @@
-import React from "React";
+import React from "react";
 import { Colors } from "../../../helpers/ui";
 import Button from "../button/button.component";
 import Styled from "./navigation.styled";

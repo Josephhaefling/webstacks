@@ -1,4 +1,4 @@
-import React from "React";
+import React from "react";
 import Text from "../text/text.component";
 import { Colors } from "../../../helpers/ui";
 import Styled from "./button.styled";

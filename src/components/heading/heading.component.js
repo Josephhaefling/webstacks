@@ -1,4 +1,4 @@
-import React, {createElement} from "React";
+import React, {createElement} from "react";
 import Styled from "./heading.styled";
 
 const Heading = ({ children, color, level }) => {

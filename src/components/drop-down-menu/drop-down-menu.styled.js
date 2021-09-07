@@ -3,6 +3,7 @@ import { Colors } from "../../../helpers/ui";
 
 const Styled = {
   Section: styled.section`
+    cursor: pointer;
     margin-right: 50px;
   `,
 

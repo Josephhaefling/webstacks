@@ -3,13 +3,9 @@ import styled from "styled-components";
 const Styled = {
   NavBar: styled.section`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     min-height: 115px; 
     width: 100%;
-
-    @media(min-width: 768px) {
-      flex-direction: row;
-    }
   `,
 
   LogoContainer: styled.section`
@@ -32,8 +28,14 @@ const Styled = {
   NavigationContainer: styled.section`
     align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    margin-top: 20px;
     width: 100%;
+
+    @media(min-width: 1024px) {
+      justify-content: center;
+      margin-top: 0px;
+    }
   `,
 };
 

@@ -4,12 +4,11 @@ import heroImage from '../../images/hero-background@2x.png';
 import "@fontsource/inter/" 
 
 const pageStyles = {
-  backdropFilter: 'brightness(40%)',
   backgroundImage: `url(${heroImage})`,
   backgroundRepeat: 'no-repeat',
   backgroundSize: '100%',
   fontFamily: 'Inter',
-  height: '100vh',
+  height: '100%',
 }
 
 const IndexPage = () => {

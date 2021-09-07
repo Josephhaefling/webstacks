@@ -2,6 +2,8 @@ import React from 'react';
 import { useStaticQuery, graphql } from "gatsby";
 
 const useLandingPage = () => {
+
+  //TODO make the api pretty
     const data = useStaticQuery(
       graphql
       `{

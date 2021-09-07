@@ -7,8 +7,15 @@ const Styled = {
     border: none;
     border-radius: 3px;
     display: flex;
+    justify-content: center;
     max-height: 40px;
+    margin-top: 15px;
     padding: 11px 24px 11px 24px;
+
+    @media(min-width: 768px) {
+      margin-right: 15px;
+    }
+
   `,
 
   Label: styled.section`

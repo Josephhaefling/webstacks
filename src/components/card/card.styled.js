@@ -4,8 +4,8 @@ const Styled = {
   Card: styled.section`
     background-color: ${props => props.color};
     border-radius: 4px;
-    height: 240px;
-    width: 370px;
+    margin-bottom: 25px;
+    width: 100%;
   `,
 
   Header: styled.section``,

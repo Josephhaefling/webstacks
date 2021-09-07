@@ -1,21 +1,13 @@
 import * as React from "react";
 import LandingPage from "../components/landing-page/landing-page.component";
-import heroImage from '../../images/hero-background@2x.png';
-import "@fontsource/inter/" 
-
-const pageStyles = {
-  backgroundImage: `url(${heroImage})`,
-  backgroundRepeat: 'no-repeat',
-  backgroundSize: '100%',
-  fontFamily: 'Inter',
-  height: '100%',
-}
+import "@fontsource/inter/";
+import Styled from '../components/page-styles/index.styled';
 
 const IndexPage = () => {
   return  (
-    <main style={pageStyles} >
+    <Styled.Main>
       <LandingPage />
-    </main>
+    </Styled.Main>
   )
 }
 

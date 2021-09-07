@@ -1,9 +1,9 @@
 import React from "react";
 import Text from "../text/text.component";
-import { Colors } from "../../../helpers/ui";
-import Styled from "./button.styled";
-import { FiChevronRight } from "react-icons/fi";
 
+import Styled from "./button.styled";
+import { Colors } from "../../../helpers/ui";
+import { FiChevronRight } from "react-icons/fi";
 
 const Button = ({ backgroundColor, color, image, label }) => {
   const validImages = {

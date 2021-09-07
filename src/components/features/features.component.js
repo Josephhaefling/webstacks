@@ -8,8 +8,7 @@ import Styled from './features.styled';
 import { Colors } from "../../../helpers/ui";
 
 const Features = ({ featuredItems }) => {
-  
-  
+  //Create array of feature Cards
   const getFeaturedItems = () => (
     featuredItems.map(item => {
       return (
@@ -38,10 +37,8 @@ const Features = ({ featuredItems }) => {
       )
     })
   )
-    
+  //Array of feature cards to be rendered    
   const allItems = getFeaturedItems();
-
-
 
   return (
     <Styled.Features>

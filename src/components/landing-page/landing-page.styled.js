@@ -1,24 +1,29 @@
 import styled from "styled-components";
 import Section from "../section/section.component";
+import Card from '../card/card.component';
 
 const Styled = {
   Page: styled.section``,
 
-  TopSection: styled(Section)`
-    margin-top: 50px;
-    padding: 0px 255px 115px 255px;
-  `,
+  TopSection: styled(Section)``,
 
   BottomSection: styled(Section)`
-    margin-top: 50px;
-    padding: 0px 255px 100px 255px;
+    display: flex;
+    justify-content: center;
   `,
 
   ButtonSection: styled(Section)`
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
     margin: 28px 0px;
     padding: 0px;
-  `
+
+    @media(min-width: 768px) {
+      flex-direction: row;
+    }
+  `,
+
+  Card: styled(Card)``
 };
 
 export default Styled;

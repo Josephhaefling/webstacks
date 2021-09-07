@@ -1,6 +1,7 @@
 import React from "react";
 import Styled from "./card.styled";
 
+//Create generic header/body/footer for card
 const Header = ({ children, ...rest}) => (
   <Styled.Header {...rest}>{children}</Styled.Header>
 );

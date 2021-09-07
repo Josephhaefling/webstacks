@@ -4,6 +4,7 @@ import Button from "../button/button.component";
 import Styled from "./navigation.styled";
 
 const Navigation = () => {
+  //TODO make a dropdown menu for smaller screen sizes
   return (
     <Styled.Navigation>
       <Button 

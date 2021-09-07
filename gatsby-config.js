@@ -17,6 +17,7 @@ module.exports = {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
       },
     },
+    "gatsby-plugin-image"
     "gatsby-plugin-styled-components",
   ],
 };

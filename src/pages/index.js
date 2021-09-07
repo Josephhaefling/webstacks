@@ -4,7 +4,6 @@ import heroImage from '../../images/hero-background@2x.png';
 import "@fontsource/inter/" 
 
 const pageStyles = {
-  border: '3px solid blue', 
   backdropFilter: 'brightness(40%)',
   backgroundImage: `url(${heroImage})`,
   backgroundRepeat: 'no-repeat',

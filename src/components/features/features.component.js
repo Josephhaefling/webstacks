@@ -1,5 +1,4 @@
 import React from 'react';
-import Card from '../card/card.component';
 import Heading from '../heading/heading.component';
 import Text from '../text/text.component';
 import Button from '../button/button.component';
@@ -15,7 +14,7 @@ const Features = ({ featuredItems }) => {
         <Styled.Card color={Colors.white} key={item.title} >
           <Styled.CardHeader>
             <Styled.ImageContainer id={item.slug}>
-              <img src={item.image.file.url} />
+              <img src={item.image.file.url} alt=''/>
             </Styled.ImageContainer>
           </Styled.CardHeader>
           <Styled.CardBody>

@@ -1,4 +1,3 @@
-import React from 'react';
 import { useStaticQuery, graphql } from "gatsby";
 
 const useLandingPage = () => {
@@ -9,14 +8,9 @@ const useLandingPage = () => {
       `{
           allContentfulLandingPageData {
             nodes {
-              backgroundImage {
-                file {
-                  url
-                }
-              }
               featuredItems {
-                title
                 slug
+                title
                 description {
                   description
                 }

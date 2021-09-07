@@ -9,7 +9,7 @@ const NavBar = () => {
     <Section>
       <Styled.NavBar>
         <Styled.LogoContainer>
-          <img src={bracketsLogo}/>
+          <img src={bracketsLogo} alt="Brackets logo"/>
         </Styled.LogoContainer>
         <Styled.NavigationContainer>
           <Navigation />
